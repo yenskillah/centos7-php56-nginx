@@ -14,7 +14,7 @@ RUN rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
 # php v5.6.7+
 RUN yum install -y php56w php56w-opcache php56w-fpm php56w-mbstring php56w-mysql php56w-pdo php56w-pecl-memcache php56w-xml
 # mysql
-RUN mysql-server mysql-client
+RUN yum install -y mysql-server mysql-client
 
 RUN yum install -y yum-plugin-replace 
 
